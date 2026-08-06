@@ -1,0 +1,76 @@
+{
+  "name": "logo-generator",
+  "version": "0.1.0",
+  "description": "Deterministic SVG identicon generator",
+  "keywords": [
+    "identicon",
+    "logo",
+    "avatar",
+    "svg",
+    "generator",
+    "deterministic",
+    "typescript"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "author": "js2me",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/js2me/logo-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/js2me/logo-generator/issues"
+  },
+  "homepage": "https://js2me.github.io/logo-generator/",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "pnpm clean && tsc --emitDeclarationOnly && vite build",
+    "build:watch": "pnpm build && vite build --watch",
+    "ts:check": "tsc --noEmit",
+    "test": "pnpm build && node scripts/test.mjs",
+    "perf:test": "pnpm build && node scripts/perf-test.mjs",
+    "size": "pnpm build && size-limit",
+    "prepublishOnly": "pnpm build",
+    "docs": "docusite dev",
+    "docs:build": "docusite build",
+    "docs:serve": "docusite preview"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^13.0.3",
+    "docusite": "^0.1.8",
+    "size-limit": "^13.0.3",
+    "typescript": "^6.0.3",
+    "vite": "^7.3.5"
+  },
+  "size-limit": [
+    {
+      "path": "dist/index.js",
+      "limit": "4 KB"
+    },
+    {
+      "path": "dist/index.cjs",
+      "limit": "4.5 KB"
+    }
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@11.8.0"
+}
