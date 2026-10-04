@@ -1,5 +1,5 @@
 {
-  "name": "logo-generator",
+  "name": "gologen",
   "version": "0.0.1",
   "description": "Deterministic SVG identicon generator",
   "keywords": [
