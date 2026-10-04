@@ -1,6 +1,6 @@
 {
   "name": "logo-generator",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Deterministic SVG identicon generator",
   "keywords": [
     "identicon",
@@ -62,11 +62,11 @@
   "size-limit": [
     {
       "path": "dist/index.js",
-      "limit": "4 KB"
+      "limit": "2 KB"
     },
     {
       "path": "dist/index.cjs",
-      "limit": "4.5 KB"
+      "limit": "2 KB"
     }
   ],
   "publishConfig": {
