@@ -12,8 +12,8 @@ importers:
         specifier: ^13.0.3
         version: 13.0.3(size-limit@13.0.3)
       docusite:
-        specifier: ^0.1.8
-        version: 0.1.12(@algolia/client-search@5.56.0)(postcss@8.5.25)(search-insights@2.17.3)(typescript@6.0.3)(vite@7.3.6(jiti@2.7.0))
+        specifier: ^0.2.0
+        version: 0.2.0(@algolia/client-search@5.56.0)(postcss@8.5.25)(search-insights@2.17.3)(typescript@6.0.3)(vite@7.3.6(jiti@2.7.0))
       size-limit:
         specifier: ^13.0.3
         version: 13.0.3
@@ -1126,8 +1126,8 @@ packages:
   devlop@1.1.0:
     resolution: {integrity: sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==}
 
-  docusite@0.1.12:
-    resolution: {integrity: sha512-g2zEYi+6ILPC8hP/mY60q0ZOYKRZoYwRajaqfCVCMNvyZf51mwd/vxx30PymAMIt1ntggYQ3y1GLR6JFhwhEOg==}
+  docusite@0.2.0:
+    resolution: {integrity: sha512-7+E9WqAyGKd5/W8d4UQHocwFyL1tFnvSYv/7qq1HjTHWpRUP10r5UZI6pFMh+Zs0S7XMEsLrX1HmsZxHUSYd4A==}
     hasBin: true
 
   duplexer@0.1.2:
@@ -2721,7 +2721,7 @@ snapshots:
     dependencies:
       dequal: 2.0.3
 
-  docusite@0.1.12(@algolia/client-search@5.56.0)(postcss@8.5.25)(search-insights@2.17.3)(typescript@6.0.3)(vite@7.3.6(jiti@2.7.0)):
+  docusite@0.2.0(@algolia/client-search@5.56.0)(postcss@8.5.25)(search-insights@2.17.3)(typescript@6.0.3)(vite@7.3.6(jiti@2.7.0)):
     dependencies:
       '@iconify-json/logos': 1.2.12
       cac: 6.7.14
