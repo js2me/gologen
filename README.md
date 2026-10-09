@@ -1,4 +1,4 @@
-# logo-generator
+# gologen
 
 Deterministic SVG identicon generator with 32 geometric shapes, seeded colors,
 and a data URL helper.
@@ -6,13 +6,13 @@ and a data URL helper.
 ## Installation
 
 ```bash
-pnpm add logo-generator
+pnpm add gologen
 ```
 
 ## Usage
 
 ```ts
-import { makeIdentIcon, makeIdentIconDataUrl } from 'logo-generator';
+import { makeIdentIcon, makeIdentIconDataUrl } from 'gologen';
 
 const svg = makeIdentIcon('product-123');
 const dataUrl = makeIdentIconDataUrl('product-123');

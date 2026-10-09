@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: logo-generator
+  name: gologen
   text: Deterministic SVG identicons
   tagline: Generate unique product logos from any identifier
   image:
@@ -13,7 +13,7 @@ hero:
       link: /guide/getting-started
     - theme: alt
       text: View on GitHub
-      link: https://github.com/js2me/logo-generator
+      link: https://github.com/js2me/gologen
 
 features:
   - title: Deterministic

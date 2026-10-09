@@ -16,12 +16,12 @@
   "author": "js2me",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/js2me/logo-generator.git"
+    "url": "git+https://github.com/js2me/gologen.git"
   },
   "bugs": {
-    "url": "https://github.com/js2me/logo-generator/issues"
+    "url": "https://github.com/js2me/gologen/issues"
   },
-  "homepage": "https://js2me.github.io/logo-generator/",
+  "homepage": "https://js2me.github.io/gologen/",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -50,9 +50,12 @@
     "prepublishOnly": "pnpm build",
     "docs": "docusite dev",
     "docs:build": "docusite build",
-    "docs:serve": "docusite preview"
+    "docs:serve": "docusite preview",
+    "changeset:version": "changeset version"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.5.2",
+    "@changesets/cli": "^2.31.1",
     "@size-limit/preset-small-lib": "^13.0.3",
     "docusite": "^0.2.0",
     "size-limit": "^13.0.3",

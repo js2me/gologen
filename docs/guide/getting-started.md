@@ -3,7 +3,7 @@
 ## Install
 
 ```bash
-pnpm add logo-generator
+pnpm add gologen
 ```
 
 The package has no runtime dependencies and works in browsers and Node.js
@@ -12,7 +12,7 @@ environments that support `Map` and `encodeURIComponent`.
 ## Generate an SVG
 
 ```ts
-import { makeIdentIcon } from 'logo-generator';
+import { makeIdentIcon } from 'gologen';
 
 const svg = makeIdentIcon('account-42');
 document.querySelector('#logo')!.innerHTML = svg;
@@ -25,7 +25,7 @@ identifier still determines the cache key.
 ## Use an image URL
 
 ```ts
-import { makeIdentIconDataUrl } from 'logo-generator';
+import { makeIdentIconDataUrl } from 'gologen';
 
 const image = document.querySelector('img')!;
 image.src = makeIdentIconDataUrl(42);
